@@ -1,0 +1,21 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Edit Person</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input [(ngModel)]="pessoa.name" name="name" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input [(ngModel)]="pessoa.age" name="age" type="text" class="form-control">
+                </div>
+                <button (click)="save(pessoa)" class="btn btn-danger">Save</button>
+                <button (click)="cancel()" class="btn btn-warning" style="margin-left: 10px;">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
